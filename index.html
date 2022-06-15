@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Житомирский ликеро-водочный завод</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/cd8855ee2a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="phone">
+        <i class="fa fa-phone"></i>
+        <span>
+          <h3><a href="tel: +38 (050) 084 15 82">+38 (050) 084 15 82</a></h3>
+          <p>Мы работаем без выходных 24/7</p>
+        </span>
+    </div>
+</header>
+<script>
+    $(function() {
+        let header = $('.header');
+        let hederHeight = header.height(); // вычисляем высоту шапки
+
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 1) {
+                header.addClass('header_fixed');
+                $('body').css({
+                    'paddingTop': hederHeight+'px' // делаем отступ у body, равный высоте шапки
+                });
+            } else {
+                header.removeClass('header_fixed');
+                $('body').css({
+                    'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+                })
+            }
+        });
+    });
+</script>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="images/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/2.jpg" style="width:100%">
+    </div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<section class="facilities">
+    <h1>Коньяк</h1>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/bootle.jpg">
+            <h3>Коньяк "Классический"</h3>
+            <p>10л - 100 грн/л</p>
+            <p>20л - 90 грн/л</p>
+            <p>60л - 69 грн/л</p>
+            <p>100л - 59 грн/л</p>
+            <p>500л - договорная </p>
+            <a href="#id_form" class="hero-btn red-btn">Заказать</a>
+        </div>
+        <div class="facilities-col">
+            <img src="images/bootle.jpg">
+            <h3>Коньяк "Карамель"</h3>
+            <p>10л - 105 грн/л</p>
+            <p>20л - 100 грн/л</p>
+            <p>60л - 80 грн/л</p>
+            <p>100л - 68 грн/л</p>
+            <p>500л - договорная </p>
+            <a href="#id_form" class="hero-btn red-btn">Заказать</a>
+        </div>
+        <div class="facilities-col">
+            <img src="images/bootle.jpg">
+            <h3>Коньяк "Молдова"</h3>
+            <p>10л - 120 грн/л</p>
+            <p>20л - 110 грн/л</p>
+            <p>60л - 100 грн/л</p>
+            <p>100л - 90грн/л</p>
+            <p>500л - договорная</p>
+            <a href="#id_form" class="hero-btn red-btn">Заказать</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="facilities">
+    <h1>Водка</h1>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/bootle.jpg">
+            <h3>Водка "Классика"</h3>
+            <p>10л - 75 грн/л</p>
+            <p>20л - 73.50 грн/л</p>
+            <p>60л - 70 грн/л</p>
+            <p>100л - 68 грн/л</p>
+            <p>500л - договорная </p>
+            <a href="#id_form" class="hero-btn red-btn">Заказать</a>
+        </div>
+        <div class="facilities-col">
+            <img src="images/bootle.jpg">
+            <h3>Водка "Пшеничная"</h3>
+            <p>10л - 80 грн/л</p>
+            <p>20л - 78 грн/л </p>
+            <p>60л - 75 грн/л</p>
+            <p>100л - 70 грн/л</p>
+            <p>500л - договорная </p>
+            <a href="#id_form" class="hero-btn red-btn">Заказать</a>
+        </div>
+        <div class="facilities-col">
+            <img src="images/bootle.jpg">
+            <h3>Водка "Люксовая"</h3>
+            <p>10л - 90 грн/л</p>
+            <p>20л - 85 грн/л</p>
+            <p>60л - 80 грн/л</p>
+            <p>100л - 75 грн/л</p>
+            <p>500л - договорная </p>
+            <a href="#id_form" class="hero-btn red-btn">Заказать</a>
+        </div>
+    </div>
+
+
+</section>
+<!-- blog page content -->
+<section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <h2>КОНЬЯК И ВОДКА НА РАЗЛИВ ЖИТОМИРСКОГО ЛИКЕРО-ВОДОЧНОГО ЗАВОДА УКРАИНЫ</h2>
+            <p>Сайт является официальным дистрибутором ликёра водочной продукции в Украине. Тут мы сможем вам предложить
+                купить по цене производителя, без переплат. Так вы сможете сделать свою закупку менее затратной и при
+                этом вы получаете сертифицированный продукт высокого качества.</p>
+            <br>
+            <p>НАДАЕМ СЕРТИФИКАТ КАЧЕСТВА!</p>
+            <br>
+            <p>Одно из преимуществ быстрая доставка во все регионы Украины.</p>
+            <br>
+            <p>Вас скорее интересует не только цена, но и качество ликёра водочной продукции, тогда лучше обращаться
+                непосредственно к производителю! Компания "Альянс заводов Украины" поможет вам приобрести разливной
+                продукт с заводов Украины, который будет отвечать всем вашим требованиям алкогольных напитков (коньяка и
+                водки).
+            </p>
+            <br>
+            <p>
+                Оформить заказ вы можете у нас оставив онлайн заявку или позвонить нам по номеру телефона: <br>050 08 71
+                582</p>
+            <br>
+            <p>Мы работаем без выходных 24/7</p>
+            <p>Так же вы можете получить консультацию у нашего менеджера, он вам предоставит всю информацию о продукте и
+                поможет оформить заказ! </p>
+
+
+        </div>
+        <div class="blog-right">
+            <div id="id_form" class="comment-box">
+
+                <h3>Оформить заказ</h3>
+
+
+                <form class="telegram-form">
+                    <input type="text" name="name" placeholder="ФИО" autocomplete="off" Required/>
+                    <input type="text" name="phone" placeholder="Телефон" autocomplete="off" Required/>
+                    <input type="text" name="email" placeholder="Email (не обязательно)" autocomplete="off"/>
+                    <input type="text" name="sity" placeholder="Ваш город" autocomplete="off" Required/>
+                    <label> Способ доставки<br></label>
+                    <select name="delivery" Служба доставки>
+                        <option value="не выбрано">---</option>
+                        <option value="Новая Почта">Новая Почта</option>
+                        <option value="Укрпочта">Укрпочта</option>
+                        <option value="Sat.ua">Sat.ua</option>
+                        <option value="Delivery">Delivery</option>
+                    </select>
+                    <label> Отделение №:<br></label>
+                    <input type="number" name="postnumber" placeholder="Номер отделения" autocomplete="off" value=""
+                           min="1" max="9999" aria-required="true" aria-invalid="false" Required/>
+                    <label>Способ оплаты</label>
+                    <select name="payment" Служба доставки>
+                        <option value="При получении">При получении</option>
+                        <option value="На карту">На карту</option>
+                    </select>
+                    <label>Сколько литров? кратное 5 (минимальный <br>заказ 10 литров</label>
+                    <input type="number" name="litrs" placeholder="10" autocomplete="off" Required/>
+                    <textarea rows="5" name="message" placeholder="Ваш комментарий"></textarea>
+                    <button type="submit" class="hero-btn red-btn">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer -->
+
+
+<section class="footer">
+    <h4>Житомирский ликеро-водочный завод</h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>2022</p>
+
+</section>
+
+
+<!-- JS!!! -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./main.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4500); // Change image every 4.5 seconds
+    }
+</script>
+
+</body>
+</html>
+
