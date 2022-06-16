@@ -27,7 +27,7 @@ img {vertical-align: middle;}
   /* Slideshow container */
 .slideshow-container {
   max-width: 1100px;
-  position: relative;
+  position: absolute;
   margin: auto;
 }
 
@@ -458,11 +458,12 @@ h3 {
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
+
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
   position: relative;
   margin: auto;
+  max-width: 932px;
 }
 
 /* Caption text */
