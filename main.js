@@ -75,6 +75,10 @@ $('.telegram-form').on('submit', function (event) {
                 showConfirmButton: false,
                 timer: 2000
             })
+            setTimeout(() => {
+                $('.content').hide();
+                $('.overlay').hide();
+            }, 2000);
         }
     });
 

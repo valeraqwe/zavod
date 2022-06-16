@@ -20,24 +20,78 @@
 </head>
 <body>
 <header class="header">
+    <div class="site_title">
+    <h3 class="site_title_color">Житомирcкий ликеро-водочный завод</h3>
+    </div>
     <div class="phone">
         <i class="fa fa-phone"></i>
         <span>
-          <h3><a href="tel: +38 (050) 084 15 82">+38 (050) 084 15 82</a></h3>
-          <p>Мы работаем без выходных 24/7</p>
+              <h3><a class="phone_number" href="tel: +38 (050) 084 15 82">+38 (050) 084 15 82</a></h3>
+         <button>Заказать обратный<br>звонок</button>
+
+<div class="mymodal">
+  <div class="overlay">
+    <div class="content">
+      <i class="fa fa-times close" aria-hidden="true"></i>
+
+      <h3>Заказ обратного звонка</h3>
+      <form class="telegram-form">
+                    <input type="text" name="name" placeholder="ФИО" autocomplete="off" Required/>
+                    <input type="text" name="phone" placeholder="Телефон" autocomplete="off" Required/>
+                    <textarea rows="5" name="message" placeholder="Ваш комментарий"></textarea>
+                    <button type="submit" class="hero-btn red-btn">ОТПРАВИТЬ</button>
+                </form>
+    </div>
+  </div>
+</div>
+          <p>Мы работаем без выходных 24/7!</p>
         </span>
     </div>
 </header>
 <script>
-    $(function() {
+    //Создаем переменную, в которую сохраняем наше модальное окно
+    var modal = $('.mymodal');
+
+    //Функция устанавливает значение свойства display в то, которое указано в ее параметрах при вызове
+    function setModal(display){
+    modal.css('display', display);
+    }
+
+    //Функция обрабатывает клик по кнопке "Оставить заявку"
+    $('button').click(function(){
+    setModal('block');
+    });
+
+    //Функция обрабатывает клик по кнопке "Закрыть"
+    $('.close').click(function(){
+    setModal('none');
+    });
+
+    //Функция обрабатывает клики по модальному окну, и, если клик не произошел не по блоку content и не по его дочерним элементам, то закрываем модальное окно
+    $(modal).click(function(e){
+    var target = e.target;
+    if(!($('.content').is(target)) && $('.content').has(target).length ===0){
+    setModal('none');
+    }
+    });
+
+    //Если нажата клавиша ESC, то закрываем модальное окно
+    $(document).keydown(function(e){
+    if(e.which == 27 ){
+    setModal('none');
+    }
+    });
+</script>
+<script>
+    $(function () {
         let header = $('.header');
         let hederHeight = header.height(); // вычисляем высоту шапки
 
-        $(window).scroll(function() {
-            if($(this).scrollTop() > 1) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
                 header.addClass('header_fixed');
                 $('body').css({
-                    'paddingTop': hederHeight+'px' // делаем отступ у body, равный высоте шапки
+                    'paddingTop': hederHeight + 'px' // делаем отступ у body, равный высоте шапки
                 });
             } else {
                 header.removeClass('header_fixed');
@@ -51,11 +105,11 @@
 <div class="slideshow-container">
 
     <div class="mySlides fade">
-        <img src="images/1.jpg" style="width:100%">
+        <img src="images/one.jpg" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-        <img src="images/2.jpg" style="width:100%">
+        <img src="images/two.jpg" style="width:100%">
     </div>
 
 
@@ -150,7 +204,7 @@
                 купить по цене производителя, без переплат. Так вы сможете сделать свою закупку менее затратной и при
                 этом вы получаете сертифицированный продукт высокого качества.</p>
             <br>
-            <p>НАДАЕМ СЕРТИФИКАТ КАЧЕСТВА!</p>
+            <p>ПРЕДОСТАВЛЯЕМ СЕРТИФИКАТ КАЧЕСТВА!</p>
             <br>
             <p>Одно из преимуществ быстрая доставка во все регионы Украины.</p>
             <br>
@@ -197,7 +251,7 @@
                         <option value="При получении">При получении</option>
                         <option value="На карту">На карту</option>
                     </select>
-                    <label>Сколько литров? кратное 5 (минимальный <br>заказ 10 литров</label>
+                    <label>Сколько литров? минимальный заказ 10 литров</label>
                     <input type="number" name="litrs" placeholder="10" autocomplete="off" Required/>
                     <textarea rows="5" name="message" placeholder="Ваш комментарий"></textarea>
                     <button type="submit" class="hero-btn red-btn">ОТПРАВИТЬ</button>
