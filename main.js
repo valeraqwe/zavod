@@ -12,7 +12,7 @@ $('.telegram-form').on('submit', function (event) {
     $('.submit', form).val('Отправка...');
     $('input, textarea', form).attr('disabled','');
 
-    data.append( 'ФИО', 		$('[name="name"]', form).val() );
+    data.append( 'ФИО', 		    $('[name="name"]', form).val() );
     data.append( 'Телефон', 		$('[name="phone"]', form).val() );
     data.append( 'Почта', 		$('[name="email"]', form).val() );
     data.append( 'Город', 		$('[name="sity"]', form).val() );
