@@ -348,8 +348,12 @@ h3 {
 }
 
 .red-btn {
-  background: rgb(250, 171, 0);
-  border-color: rgb(250, 171, 0);
+  background: rgb(255, 159, 13);
+  border-color: rgb(255, 159, 13);
+}
+.red-btn2 {
+  background: rgb(13, 124, 255);
+  border-color: rgb(13, 124, 255);
 }
 
 
