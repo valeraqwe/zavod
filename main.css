@@ -155,8 +155,8 @@ nav img {
   background: transparent;
   position: relative;
   cursor: pointer;
-  background: rgb(250, 171, 0);
-  border-color: rgb(250, 171, 0);
+  background: rgb(103, 1, 5);
+  border-color: rgb(103, 1, 5);
 }
 
 
@@ -337,23 +337,19 @@ h3 {
 }
 
 .icons .fa {
-  color: #fa9d00;
+  color: #670105;
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
 }
 
-.fa-heart-o {
-  color: #f44336;
-}
-
 .red-btn {
-  background: rgb(255, 159, 13);
-  border-color: rgb(255, 159, 13);
+  background: rgb(103, 1, 5);
+  border-color: rgb(103, 1, 5);
 }
 .red-btn2 {
-  background: rgb(13, 124, 255);
-  border-color: rgb(13, 124, 255);
+  background: rgb(68, 149, 177);
+  border-color: rgb(68, 149, 177);
 }
 
 
@@ -491,10 +487,10 @@ img {vertical-align: middle;}
 }
 
 .tel_header {
-  color: #fa9d00;
+  color: #670105;
 }
 .fa-phone {
-  color: orange;
+  color: #670105;
 }
 
 button{
@@ -509,8 +505,8 @@ button{
   color: #fff;
   cursor: pointer;
   transition: .5s;
-  background: rgb(250, 171, 0);
-  border-color: rgb(250, 171, 0);
+  background: rgb(103, 1, 5);
+  border-color: rgb(103, 1, 5);
 }
 
 /*button:hover{
@@ -569,10 +565,10 @@ h3{
 }
 .phone_number {
   text-decoration: none;
-  color: #fa9d00;
+  color: #670105;
 }
 .site_title_color {
-  color: #fa9d00;
+  color: #670105;
 }
 
 

@@ -1,4 +1,4 @@
-$('.telegram-form').on('submit', function (event) {
+$('.telegram-form').on('submit', function (event)  {
 
     event.stopPropagation();
     event.preventDefault();
@@ -13,14 +13,14 @@ $('.telegram-form').on('submit', function (event) {
     $('input, textarea', form).attr('disabled','');
 
     data.append( 'ФИО', 		    $('[name="name"]', form).val() );
-    data.append( 'Телефон', 		$('[name="phone"]', form).val() );
+    data.append( 'Телефон', 	    $('[name="phone"]', form).val() );
     data.append( 'Почта', 		$('[name="email"]', form).val() );
     data.append( 'Город', 		$('[name="sity"]', form).val() );
-    data.append( 'Доставка', 		$('[name="delivery"]', form).val() );
-    data.append( 'Отделение№', 		$('[name="postnumber"]', form).val() );
+    data.append( 'Доставка', 	    $('[name="delivery"]', form).val() );
+    data.append( 'Отделение№', 	$('[name="postnumber"]', form).val() );
     data.append( 'Оплата', 		$('[name="payment"]', form).val() );
     data.append( 'Литраж', 		$('[name="litrs"]', form).val() );
-    data.append( 'Сообщение', 		$('[name="message"]', form).val() );
+    data.append( 'Сообщение', 	$('[name="message"]', form).val() );
 
 
 
